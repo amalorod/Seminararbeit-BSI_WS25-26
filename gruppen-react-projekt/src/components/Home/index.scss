@@ -13,7 +13,7 @@ body {
 .modul {
   border: solid #ffbd44 0.3rem;
   border-radius: 1rem;
-  background-color: #f5f5f7;
+  background-color: lightgrey;
   padding: 0.5rem;
   margin: 0.5rem;
   display: flex;
@@ -35,43 +35,103 @@ body {
   flex-grow: 1;
 }
 
+.box {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.boxItem {
+  font-size: 2.5rem;
+  margin-right: auto;
+  border: none !important;
+  background: none;
+  color: black;
+}
+
+.boxItem:hover {
+  color: white;
+}
+
+.inhalt {
+  position: absolute;
+  margin: auto;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0; // WICHTIG: Entfernt den Standard-Abstand
+    line-height: 1.5; // Sorgt dafür, dass kein unsichtbarer Platz über/unter dem Text ist
+  }
+}
+
 /* Hauptinhalt unter der Topbar */
 .mainBody {
-  height: 100%;
+  height: 100vh;
   flex-grow: 1;
-  padding: 1rem;
-  background-color: #666666;
+  background-color: whitesmoke;
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // 12 gleich breite Spalten
+  grid-auto-rows: minmax(100px, auto); // 12 gleich hohe Zeilen
+  gap: 1rem; // Abstand zwischen den Kacheln
+  padding: 1rem;
   box-sizing: border-box;
 }
 
 .ernährung {
-  border-color: #00ca4e;
-  width: 70%;
-  height: 20rem;
   color: black;
+  grid-column: span 6; // Nimmt x von 12 Spalten ein
+  grid-row: span 3; // Zeilen passen sich dem Inhalt an (mind. 100px)
+  border: solid #00ca4e 0.3rem;
 }
 
 .kalorien {
-  width: 30%;
-  height: 10rem;
+  grid-column: span 4; // Nimmt x von 12 Spalten ein
+  grid-row: span 1;
   color: black;
   border-color: #ff605c;
 }
 
 .training {
-  width: 20rem;
-  height: 5rem;
+  grid-column: span 4;
+  grid-row: span 2;
   color: black;
   border-color: #ff605c;
 }
 
 .social {
-  width: 4rem;
-  height: 4rem;
+  grid-column: span 2;
+  grid-row: span 1;
+  border-color: #ffbd44;
+  color: black;
+}
+
+.wasser {
+  grid-column: span 2;
+  grid-row: span 1;
+  border-color: #007aff;
+  color: black;
+}
+.test1 {
+  grid-column: span 2;
+  grid-row: span 1;
+  border-color: #00ca4e;
+  color: black;
+}
+
+.test2 {
+  grid-column: span 4;
+  grid-row: span 1;
+  border-color: #007aff;
+  color: black;
+}
+
+.test3 {
+  grid-column: span 8;
+  grid-row: span 1;
   border-color: #ffbd44;
   color: black;
 }
