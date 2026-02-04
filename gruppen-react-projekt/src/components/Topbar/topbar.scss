@@ -1,0 +1,79 @@
+.topbar {
+  background-color: #1d1d1f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.modul2 {
+  border: solid #ffbd44 0.3rem;
+  border-radius: 1rem;
+  background-color: #f5f5f7;
+  padding: 0.5rem !important;
+  margin: 0.5rem !important;
+  display: flex;
+}
+
+.user {
+  max-width: fit-content;
+  max-height: fit-content;
+  justify-content: center;
+  background-color: #666666;
+}
+
+.platzhalter1 {
+  display: flex;
+  flex-grow: 1;
+  height: 3rem;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.suchfeld {
+  max-height: fit-content;
+  margin-left: auto;
+  min-width: 10rem;
+  justify-content: flex-end;
+  background-color: #666666;
+  align-items: center;
+}
+
+.suche {
+  border: none !important;
+  background: none;
+  font-size: 1.5rem;
+}
+
+.suche:hover {
+  transform: scale(1.2);
+}
+
+.settings {
+  justify-content: flex-end;
+  background-color: #666666;
+  font-size: 1.5rem;
+}
+
+.navitem {
+  color: #f5f5f7;
+  background-color: none;
+  height: fit-content;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.navitem:hover {
+  color: #ffbd44;
+  transform: scale(1.3);
+}
