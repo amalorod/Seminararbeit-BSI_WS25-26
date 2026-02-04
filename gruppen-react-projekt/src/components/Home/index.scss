@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: white;
+}
+
+.modul {
+  border: solid #ffbd44 0.3rem;
+  border-radius: 1rem;
+  background-color: #f5f5f7;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+}
+
+.home-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.sidebar {
+  height: 100vh;
+  min-width: fit-content;
+  background-color: #1d1d1f;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #666666;
+}
+
+.navitem {
+  color: #f5f5f7;
+  border: none;
+  background-color: none;
+  height: fit-content;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.socialbar {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialItem {
+  color: #f5f5f7;
+  border: none;
+  background-color: none;
+  height: fit-content;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Topbar oben, mainbody unten */
+}
+
+/* Topbar oben */
+.topbar {
+  height: fit-content; /* fixe Höhe */
+  background-color: #1d1d1f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.user {
+  margin-left: 0;
+  margin-right: auto;
+  font-size: auto;
+  max-width: fit-content;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: #666666;
+  margin-right: 1rem;
+}
+
+.platzhalter1 {
+  flex-grow: 1;
+  height: 3rem;
+  background-color: #666666;
+}
+
+.platzhalter2 {
+  flex-grow: 1;
+  height: 3rem;
+  background-color: #666666;
+}
+
+.platzhalter3 {
+  flex-grow: 1;
+  height: 3rem;
+  background-color: #666666;
+}
+
+.suchfeld {
+  min-width: 10rem;
+  justify-content: flex-end;
+  background-color: #666666;
+}
+
+.settings {
+  justify-content: flex-end;
+  background-color: #666666;
+}
+
+/* Hauptinhalt unter der Topbar */
+.mainBody {
+  height: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #666666;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.ernährung {
+  border-color: #00ca4e;
+  width: 70%;
+  height: 20rem;
+  color: black;
+}
+
+.kalorien {
+  width: 30%;
+  height: 10rem;
+  color: black;
+  border-color: #ff605c;
+}
+
+.training {
+  width: 20rem;
+  height: 5rem;
+  color: black;
+  border-color: #ff605c;
+}
+
+.social {
+  width: 4rem;
+  height: 4rem;
+  border-color: #ffbd44;
+  color: black;
+}
