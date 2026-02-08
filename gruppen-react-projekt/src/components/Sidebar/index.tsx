@@ -10,6 +10,8 @@ import {
   FaFacebook,
   FaTiktok,
   FaYoutube,
+  FaChartColumn,
+  
 } from "react-icons/fa6";
 
 const Sidebar = () => {
@@ -30,6 +32,9 @@ const Sidebar = () => {
             </Button>
             <Button className="navitem" href="#">
               <FaBoltLightning />
+            </Button>
+            <Button className="navitem" href="#"  onClick={() => navigate("/statistik")}>
+              <FaChartColumn />
             </Button>
           </div>
 

@@ -1,7 +1,7 @@
 import Sidebar from "../Sidebar";
 import Topbar from "../Topbar";
 
-const Ernaehrung = () => {
+const Statistik = () => {
   return (
     <div className="home-page">
       <div className="sidebar">
@@ -12,11 +12,11 @@ const Ernaehrung = () => {
           <Topbar />
         </div>
         <div className="mainBody">
-          <h1>hier entseht die Ernährung Page</h1>
+          <h1>hier entseht die Statistik Page</h1>
         </div>
       </div>
     </div>
   );
 };
 
-export default Ernaehrung;
+export default Statistik;
