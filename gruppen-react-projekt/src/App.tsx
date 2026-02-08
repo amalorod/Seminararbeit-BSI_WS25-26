@@ -6,6 +6,7 @@ import Ernährung from "./components/Ernährung";
 import User from "./components/User";
 import Settings from "./components/Settings";
 import Statistik from "./components/Stats/index.tsx";
+import AnimatedLetters from "./components/AnimatedLetters";
 
 function App() {
   return (
