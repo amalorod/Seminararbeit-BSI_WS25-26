@@ -24,6 +24,7 @@
     "react-loaders": "^3.0.1",
     "react-native": "^0.83.1",
     "react-router-dom": "^7.13.0",
+    "recharts": "^3.7.0",
     "sass": "^1.97.3"
   },
   "devDependencies": {

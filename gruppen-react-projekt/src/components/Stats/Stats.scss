@@ -1,0 +1,60 @@
+/* Gesamter Bereich unter der Topbar */
+.statistik-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;        
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #f5f6fa;       
+}
+
+/* Grid für die Charts */
+.statistik-page .chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  // 2x2 layout
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;                      
+  margin-top: 2rem;
+}
+
+/* Einzelne Chart-Box */
+.statistik-page .chart-item {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;                         
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover-Effekt wie in modernen Dashboards */
+.statistik-page.chart-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Responsive Verhalten */
+@media (max-width: 1200px) {
+  .statistik-page .chart-grid {
+    grid-template-columns: 1fr;            /* Charts untereinander auf kleineren Screens */
+  }
+
+  .statistik-page .chart-item {
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .statistik-page {
+    padding: 1rem;
+  }
+
+  .statistik-page .chart-item {
+    height: 250px;
+    padding: 1rem;
+  }
+}
