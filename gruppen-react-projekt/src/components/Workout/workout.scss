@@ -1,0 +1,128 @@
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.home-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modul {
+  border: solid #ffbd44 0.3rem;
+  border-radius: 1rem;
+  background-color: lightgrey;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  overflow: hidden;
+  word-break: break-word;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Topbar oben, mainbody unten */
+}
+
+.topbar {
+  flex-grow: 1;
+}
+
+/* Hauptinhalt unter der Topbar */
+.mainBodyWork {
+  color: black;
+  height: 100vh;
+  flex-grow: 1;
+  background-color: whitesmoke;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // 12 gleich breite Spalten
+  grid-auto-rows: minmax(100px, auto); // 12 gleich hohe Zeilen
+  gap: 1rem; // Abstand zwischen den Kacheln
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+.modulHeader {
+  flex-grow: 1;
+  margin-bottom: auto;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modulSchrift {
+  margin-right: auto;
+}
+
+.inhalt {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxItem:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.basics {
+  grid-column: span 4;
+  grid-row: span 3;
+  overflow: hidden;
+}
+
+.basicTraining {
+  margin: 0.5rem;
+}
+
+.basicTraining img {
+  width: 12vw;
+}
+
+.erstellen {
+  grid-column: span 4;
+  grid-row: span 3;
+  border-color: #ff605c;
+}
+
+.erstellenBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 15rem;
+  color: black;
+  font-size: clamp(3rem, 10vw, 15rem);
+}
+
+.starten {
+  grid-column: span 4;
+  grid-row: span 3;
+  border-color: #007aff;
+}
+.teilen {
+  grid-column: span 6;
+  grid-row: span 1;
+  border-color: #00ca4e;
+}
+.stats {
+  grid-column: span 6;
+  grid-row: span 1;
+  border-color: #ffbd44;
+}

@@ -19,10 +19,16 @@
 }
 
 .user {
+  padding-top: 1rem;
   max-width: fit-content;
   max-height: fit-content;
   justify-content: center;
-  background-color: #666666;
+  border: none;
+  background-color: transparent;
+}
+
+.user:hover {
+  color: #ffbd44;
 }
 
 .platzhalter1 {

@@ -11,7 +11,7 @@ body {
 }
 
 .modul1 {
-  border: solid #ffbd44 0.3rem;
+  border: none;
   border-radius: 1rem;
   background-color: #f5f5f7;
   padding: 0.5rem;
@@ -23,7 +23,6 @@ body {
   height: 100vh;
   min-width: fit-content;
   background-color: #1d1d1f;
-  padding: 0.5rem;
   padding-top: 0.7rem;
   display: flex;
   flex-direction: column;
@@ -35,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #666666;
+  background-color: transparent;
 }
 
 .navItemBar {
